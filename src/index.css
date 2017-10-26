@@ -7,4 +7,56 @@
   justify-content: space-between;
   align-content: center;
   margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.input{
+  padding: .5em;
+  width: 40%;
+  outline: none;
+}
+
+.button{
+  width: 8em;
+  background-color: rgba(150, 200, 180, 0.8);
+  border-color: none;
+}
+
+.parentUl{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: 3% 25%;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.childrenUl{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 3%;
+}
+
+body{
+
+    font-family: Roboto;
+    color: white;
+    background: #085078; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #085078 , #85D8CE); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #085078 , #85D8CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#container{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-bottom: 2%;
 }

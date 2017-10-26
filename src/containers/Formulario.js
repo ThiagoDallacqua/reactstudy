@@ -27,7 +27,7 @@ export default class Formulario extends Component {
 
   render() {
     return (
-      <div>
+      <div id='container'>
         <form className='form' onSubmit={this.gerarCliente}>
           <Input type={'text'} name={'nome'}/>
           <Input type={'text'} name={'endereco'}/>

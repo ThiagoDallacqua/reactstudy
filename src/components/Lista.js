@@ -3,24 +3,18 @@ import React, { Component } from 'react'
 export default class Lista extends Component {
   render(){
     return(
-      <table>
-        <thead className='thead'>
-          <tr>
-            <th>Nome</th>
-            <th>Endereco</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.props.clientes.map(cliente => {
-            return (
-              <tr key={cliente.endereco}>
-                <td>{cliente.nome}</td>
-                <td>{cliente.endereco}</td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
+      <ul className='parentUl'>
+        <li>Nome</li>
+        <li>Endereço</li>
+        {this.props.clientes.map(cliente => {
+          return (
+            <ul className='childrenUl' key={cliente.endereco}>
+              <li>{cliente.nome}</li>
+              <li>{cliente.endereco}</li>
+            </ul>
+          )
+        })}
+      </ul>
     )
   }
 }
